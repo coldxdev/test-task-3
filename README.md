@@ -2,8 +2,6 @@
 
 ### Build by **coldxdev** and **tiwka** ✌️
 
-![version](https://img.shields.io/github/package-json/v/coldxdev/gulp-webstart)
-
 ![Preview](https://i.ibb.co/G06XpbD/Gulp-preview.jpg)
 
 ## Installation
