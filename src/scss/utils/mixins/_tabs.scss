@@ -1,0 +1,23 @@
+/*
+TABS BY COLDXEV
+version 2.0
+
+USAGE: ADD HTML DATA ATRIBUTES
+add data-tabs for tabs wrapper
+add data-tab for tab btn
+add data-tab-contents for tab content
+*/
+
+@mixin tabs{
+    [data-tab].active {
+        color: red;
+    }
+
+    [data-tab-content] {
+        display: none
+    }
+
+    [data-tab-content].active {
+        display: block;
+    }
+}
