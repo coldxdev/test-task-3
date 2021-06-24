@@ -1,0 +1,104 @@
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.section-page {
+    margin-top: 85px;
+    @include  adaptive-value('margin-top', 85, 40, 1);
+}
+
+.title {
+    font-weight: bold;
+    @include adaptive-value('font-size', 40, 24, 1);
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: $gray1;
+}
+
+
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    @include adaptive-value('font-size', 16, 16, 1);
+    line-height: 150%;
+    color: #fff;
+    background-color: $primary;
+    min-height: 48px;
+    padding: 0 15px;
+    border: none;
+    transition: background ease .3s, color ease .3s, opacity ease .3s;
+
+    &:hover {
+        background-color: #fff;
+        color: $primary
+    }
+}
+
+.btn--white {
+    color: $primary;
+    background-color: #fff;
+
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+    }
+}
+
+
+
+.slider-arrows {
+    position: absolute;
+    top: calc(50% - 50px);
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    justify-content: space-between;
+
+    @media (max-width:$md4+px) {
+        display: none;
+    }
+}
+
+.slider-arrow {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+
+    & .swiper-pagination-bullet {
+
+        width: 11px;
+        height: 11px;
+        opacity: 1;
+        background: #D8D8D8;
+    }
+
+    & .swiper-pagination-bullet-active {
+        width: 27px;
+        height: 27px;
+        background: url('../images/icons/dot-active.svg') no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+}

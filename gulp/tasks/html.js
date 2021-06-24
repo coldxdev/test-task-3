@@ -6,7 +6,7 @@ export const htmlBuild = () =>
   gulp
     .src(`${config.src.html}/*.html`)
     .pipe(include({ prefix: "@" }))
-    .pipe(webpHtml(['.jpg', '.jpeg', '.png']))
+    // .pipe(webpHtml(['.jpg', '.jpeg', '.png']))
     .pipe(gulp.dest(config.build.html));
 
 export const htmlWatch = () => gulp.watch(config.watch.html, htmlBuild);
