@@ -1,0 +1,10 @@
+.icon{
+    display: block;
+}
+
+.icon *{
+    transition: all ease .3s;
+}
+.icon:hover *{
+    stroke: $primary;
+}
